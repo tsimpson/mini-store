@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Phase 1 - Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [x] As a Developer, I should be able to run the app with yarn start or npm start
+  - We just want to get the base app working. There doesn't have to be anything special about it.
 
-## Available Scripts
+- [x] As a Developer, I should have access to a css style sheet in my application
+  -  For this task, you can load in any stylesheet you'd like, or make your own if you are into that. We don't want to opt for something like Material UI in this case, because we want practice creating our own components from a stylesheet.
 
-In the project directory, you can run:
+- [x] As a User, I should see links for "Home", "Deals", and "Cart" in the navbar, along with a Company Logo
 
-### `yarn start`
+- [x] As a User, navigating to "/", "/deals" and "/cart" via the menu should switch the contents of the page. Navigating should not reload the page.
+  - Use a router such as React Router to implement page navigation. Each link "/", "/deals", and "/cart" should render a new page in the body of the application. The page doesn't have to have anything fancy on it at this point, it can just be text, but it should be different on each page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] As a User, the nav item for the page I am on should appear "active"
+  - When a user clicks on a navlink to navigate to a different page, that navlink should appear "active" by applying some styling to it that distinguishes it from the other navlinks
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+# Phase 2 - Display Items
+- [ ] As a User, I should see a list of items on the "home" page. This should look similar to what is in the prototype.
+  - [ ] Load data from the "/item/list" route.
+  - [ ] Create a component to display the item data. This should include PropTypes for prop type checking. It should look something like the cards on the home page of the prototype
+  - [ ] Create a container component to display a list of item components. This component should be used contain and render the Item cards
+  - [ ] Create a component that renders the rating stars and count.
+    - [ ] Full Star SVG
+    - [ ] Half Star SVG
+    - [ ] Empty Star SVG
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Extras
+- [ ] Make cards in the same row always be equal height
+- [ ] Align "Add to Cart" Button to the bottom of the card, so all "add to cart" buttons in the row will align.
+- [ ] Make the card list responsive for smaller screens. Reduce the number of cards displayed per row from three to two or one depending on the small screen size.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
